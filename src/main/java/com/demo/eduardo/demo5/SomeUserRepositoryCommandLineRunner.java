@@ -10,13 +10,13 @@ import com.demo.eduardo.demo5.service.SomeUserRepositoryInterface;
 
 // We use an extension of the interface JpaRepository instead of using a UserDaoService.
 @Component
-public class UserDaoServiceCommandLineRunner2 implements CommandLineRunner {
+public class SomeUserRepositoryCommandLineRunner implements CommandLineRunner {
 	
 	@Autowired
 	private SomeUserRepositoryInterface someUserRepositoryInterface;
 	
 	// Logging stuff
-	private static final Logger log = LoggerFactory.getLogger(UserDaoServiceCommandLineRunner2.class);
+	private static final Logger log = LoggerFactory.getLogger(SomeUserRepositoryCommandLineRunner.class);
 	
 	@Override
 	public void run(String... args) throws Exception {
