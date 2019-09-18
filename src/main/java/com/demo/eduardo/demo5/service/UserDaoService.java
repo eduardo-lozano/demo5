@@ -12,7 +12,7 @@ import com.demo.eduardo.demo5.entity.SomeUser;
 @Transactional		// Opens and closes the transactions automatically.
 public class UserDaoService {
 
-	
+	// Calls manually (Autowired) the EntityManager
 	@PersistenceContext		// EntityManager is just an interface to use the PersistenceContext. This annotation autowires the EntityManager
 	private EntityManager entityManager;
 	
